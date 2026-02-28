@@ -1,5 +1,16 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4cb06681-29ac-45de-bf3a-04ce5bd82ccd" alt="preview">
+</p>
+
 # Mini Raster 3D
-A mini 3D rasterization program.
+A mini 3D software rendering rasterization program.
+
+# About
+This program is a more polished direct sequel to [BrayJL - A CodeHS Graphics Engine](https://github.com/BJL156/School-Graphics-Engine/). It's main goal was to fix the incorrect and naive 3D implementation specifically by adding:
+- Perspective correct interpolation.
+- Fix screen flashing with ANSI rendering.
+
+Both of which are fixed in this new version along with new command line arguments so the code doesn't need to be recompiled every time the output of the render needs to change such as width, aspect ratio, and if it's being rendered to the disk or to the terminal.
 
 # Features
 - [x] Correct 3D Renders.
