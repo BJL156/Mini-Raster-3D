@@ -19,6 +19,7 @@ Both of which are fixed in this new version along with new command line argument
     - [x] Vertex attributes such as color.
   - [x] Multi Mesh and triangle support.
   - [x] Triangle bounding boxes optimization.
+  - [x] Back-face culling.
 - [x] Delta time.
 - [x] Framebuffers.
   - [x] Color Buffer.
