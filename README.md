@@ -41,7 +41,7 @@ Both of which are fixed in this new version along with new command line argument
 # Build
 1. Clone the repository and change into it's directory:
 ```
-git clone https://BJL156/Mini-Raster-3D
+git clone https://github.com/BJL156/Mini-Raster-3D
 cd Mini-Raster-3D
 ```
 2. Run the `makefile` (works in either Windows or Linux):
