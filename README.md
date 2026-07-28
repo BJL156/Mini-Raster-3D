@@ -3,14 +3,39 @@
 </p>
 
 # Mini Raster 3D
-A mini 3D software rendering rasterization program.
+[![Language](https://img.shields.io/badge/language-C%2B%2B-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)](https://www.linux.org/)
+[![Renderer](https://img.shields.io/badge/renderer-Software-orange.svg)](#Features)
 
-# About
-This program is a more polished direct sequel to [BrayJL - A CodeHS Graphics Engine](https://github.com/BJL156/School-Graphics-Engine/). It's main goal was to fix the incorrect and naive 3D implementation specifically by adding:
-- Perspective correct interpolation.
-- Fix screen flashing with ANSI rendering.
+A mini 3D software rendering rasterization program written from scratch. It supports both terminal output via ANSI escape sequences and high-resolution disk outputs using `.ppm` image files.
 
-Both of which are fixed in this new version along with new command line arguments so the code doesn't need to be recompiled every time the output of the render needs to change such as width, aspect ratio, and if it's being rendered to the disk or to the terminal.
+This 3D rasterizer is a more polished, direct sequel to [BrayJL - A CodeHS Graphics Engine](https://github.com/BJL156/School-Graphics-Engine/). Its main goal was to fix naive implementation 3D rendering by adding perspective-correct interpolation and removing screen flashing during ANSI terminal rendering.
+
+## Build
+Clone the repository and change into its directory:
+```bash
+git clone [https://github.com/BJL156/Mini-Raster-3D](https://github.com/BJL156/Mini-Raster-3D)
+cd Mini-Raster-3D
+```
+Then run the `makefile`:
+```bash
+make
+```
+Then the final executable can be ran directly:
+```bash
+# Linux
+./miniRaster
+
+# Windows
+.\miniRaster.exe
+```
+
+## Usage
+./miniRaster [options]
+  --ppm             Write framebuffer to disk using a .ppm file for high resolution renders. (DEFAULT=false)
+  --ansi            Write framebuffer to terminal with a render loop. (DEFAULT=true)
+  --width [pixels]  Change pixel width (automatically updates height). (IF --ansi DEFAULT=64. IF --ppm DEFAULT=1920)
+  --aspect [ratio]  Change aspect ratio. (DEFAULT=16:9)
 
 # Features
 - [x] Correct 3D Renders.
@@ -37,22 +62,3 @@ Both of which are fixed in this new version along with new command line argument
   - [x] `--ansi` - write framebuffer to terminal with a render loop. (DEFAULT=true)
   - [x] `--width [pixels]` - change pixel width (automatically updates height). (IF `--ansi` DEFAULT=64. IF `--ppm` DEFAULT=1920)
   - [x] `--aspect [width:height]` - change aspect ratio. (DEFAULT=16:9)
-
-# Build
-1. Clone the repository and change into it's directory:
-```
-git clone https://github.com/BJL156/Mini-Raster-3D
-cd Mini-Raster-3D
-```
-2. Run the `makefile` (works in either Windows or Linux):
-```
-make
-```
-3. Run program:
-```
-./miniRaster
-```
-Or Windows:
-```
-.\miniRaster.exe
-```
