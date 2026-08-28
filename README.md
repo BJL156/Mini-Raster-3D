@@ -31,11 +31,13 @@ Then the final executable can be ran directly:
 ```
 
 ## Usage
+```
 ./miniRaster [options]
   --ppm             Write framebuffer to disk using a .ppm file for high resolution renders. (DEFAULT=false)
   --ansi            Write framebuffer to terminal with a render loop. (DEFAULT=true)
   --width [pixels]  Change pixel width (automatically updates height). (IF --ansi DEFAULT=64. IF --ppm DEFAULT=1920)
   --aspect [ratio]  Change aspect ratio. (DEFAULT=16:9)
+```
 
 # Features
 - [x] Correct 3D Renders.
