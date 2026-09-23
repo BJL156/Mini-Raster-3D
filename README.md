@@ -14,7 +14,7 @@ This 3D rasterizer is a more polished, direct sequel to [BrayJL - A CodeHS Graph
 ## Build
 Clone the repository and change into its directory:
 ```bash
-git clone [https://github.com/BJL156/Mini-Raster-3D](https://github.com/BJL156/Mini-Raster-3D)
+git clone https://github.com/BJL156/Mini-Raster-3D
 cd Mini-Raster-3D
 ```
 Then run the `makefile`:
