@@ -17,16 +17,16 @@ Clone the repository and change into its directory:
 git clone https://github.com/BJL156/Mini-Raster-3D
 cd Mini-Raster-3D
 ```
-Then run the `makefile`:
+Then run the Makefile using the following command:
 ```bash
 make
 ```
 Then the final executable can be ran directly:
 ```bash
-# Linux
+# Linux:
 ./miniRaster
 
-# Windows
+# Windows:
 .\miniRaster.exe
 ```
 
