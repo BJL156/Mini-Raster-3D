@@ -46,10 +46,10 @@ Then the final executable can be ran directly:
 ```
 
 ## Usage
-```
-./miniRaster [options]
+```bash
+./miniRaster <options>
   --ppm             Write framebuffer to disk using a .ppm file. (DEFAULT=false)
   --ansi            Write framebuffer to terminal using ANSI. (DEFAULT=true)
-  --width [pixels]  Change resolution width. (--ansi DEFAULT=64. --ppm DEFAULT=1920)
-  --aspect [ratio]  Change aspect ratio. (DEFAULT=16:9)
+  --width <pixels>  Change resolution width. (--ansi DEFAULT=64. --ppm DEFAULT=1920)
+  --aspect <ratio>  Change aspect ratio. (DEFAULT=16:9)
 ```
