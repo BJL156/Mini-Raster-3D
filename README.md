@@ -11,6 +11,21 @@ A mini 3D software rendering rasterization program written from scratch. It supp
 
 This 3D rasterizer is a more polished, direct sequel to [BrayJL - A CodeHS Graphics Engine](https://github.com/BJL156/School-Graphics-Engine/). Its main goal was to fix naive implementation 3D rendering by adding perspective-correct interpolation and removing screen flashing during ANSI terminal rendering.
 
+# Features
+- [x] Depth testing.
+- [x] Perspective correct interpolation.
+- [x] Triangle bounding boxes optimization.
+- [x] Back-face culling.
+- [x] Delta time.
+- [x] Framebuffers.
+- [x] Math Data Types.
+  - [x] 3D Vectors `Vec3d` and `Vec4d`.
+  - [x] 4x4 Matrices.
+- [x] Output image to user.
+  - [x] Write data to disk via a `.ppm`.
+  - [x] Write data to terminal using ANSI escape sequences.
+- [x] Command-line arguments.
+
 ## Build
 Clone the repository and change into its directory:
 ```bash
@@ -38,18 +53,3 @@ Then the final executable can be ran directly:
   --width [pixels]  Change resolution width. (--ansi DEFAULT=64. --ppm DEFAULT=1920)
   --aspect [ratio]  Change aspect ratio. (DEFAULT=16:9)
 ```
-
-# Features
-- [x] Depth testing.
-- [x] Perspective correct interpolation.
-- [x] Triangle bounding boxes optimization.
-- [x] Back-face culling.
-- [x] Delta time.
-- [x] Framebuffers.
-- [x] Math Data Types.
-  - [x] 3D Vectors `Vec3d` and `Vec4d`.
-  - [x] 4x4 Matrices.
-- [x] Output image to user.
-  - [x] Write data to disk via a `.ppm`.
-  - [x] Write data to terminal using ANSI escape sequences.
-- [x] Command-line arguments.
