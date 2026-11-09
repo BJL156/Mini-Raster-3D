@@ -7,9 +7,9 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)](https://www.linux.org/)
 [![Renderer](https://img.shields.io/badge/renderer-Software-orange.svg)](#Features)
 
-A mini 3D software rendering rasterization program written from scratch. It supports both terminal output via ANSI escape sequences and high-resolution disk outputs using `.ppm` image files.
+A 3D software rasterizer written from scratch. It supports both terminal output via ANSI escape sequences and high-resolution disk outputs using `.ppm` image files.
 
-This 3D rasterizer is a more polished, direct sequel to [BrayJL - A CodeHS Graphics Engine](https://github.com/BJL156/School-Graphics-Engine/). Its main goal was to fix naive implementation 3D rendering by adding perspective-correct interpolation and removing screen flashing during ANSI terminal rendering.
+The main goal of this project was to fix the naive implementation of 3D rendering from previous projects by adding perspective-correct interpolation and removing screen flashing during ANSI terminal rendering.
 
 # Features
 - [x] Depth testing.
